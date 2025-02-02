@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(207, 16, 207);
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(231, 89, 222);
+    color: rgb(84, 84, 84);
+}
+ul li {
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 0;
+    transition: all 0.2s ease-in;
+}
+li:hover {
+    cursor: pointer;
+}
+.main {
+  display: none;
+}
+ul li:hover .main {
+    display: block;
+    position: absolute;
+    top: 58px;
+    left: 40px;
+}
+.main ul li {
+    display: block;
+}
+.soft {
+    display: none;
+}
+.sub:hover .soft {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 223px;
+}
