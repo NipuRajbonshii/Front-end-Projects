@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr, table th, table td {
+    border: 2px solid black;
+}
+table th {
+    background-color: rgb(89, 167, 231);
+}
+table th, table td {
+    padding: 20px;
+}
+@media all and (max-width: 720px) {
+
+    body {
+        padding: 10px;
+    }
+    table thead {
+        display: none;
+    }
+    table {
+        width: 100%;
+    }
+    table , table tbody, table tr, table td {
+        display: block;
+    }
+    table tr {
+        margin-bottom: 20px;
+    }
+    table td {
+        text-align: right;
+    }
+    td::before {
+        content: attr(data-label);
+        float: left;
+    }
+}
