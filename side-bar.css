@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background:whitesmoke;
+    height: 100%;
+    /* width: 100vw; */
+    font-family: arial;
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18vw;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0 1px 10px rgb(160, 156, 156);
+    transform: translateX(-18vw);
+    transition: all 0.3s ease;
+}
+.container h1 {
+    font-size: 50px;
+    text-align: right;
+    padding: 0px 70px;
+    padding-top: 10px;
+    color: #8000ff;
+}
+.container ul {
+    padding: 15px 0;
+  
+}
+.container ul li {
+    font-size: 22px;
+    font-weight: 600;
+ 
+    list-style: none;
+}
+.container ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.715);
+    display: block;
+    /* without display block we cant get complete width */
+    padding: 10px 20px;
+    transition: all 0.2s ease-out;
+}
+.container ul li:hover a {
+    background: #8000ff;
+    color: #fff;
+}
+label input[type="checkbox"] {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    display: none;
+}
+label .toggle {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 20px;
+    left: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.454);
+    z-index: 1; 
+
+}
+.toggle .common {
+    position: absolute;
+    left: 2.5px;
+    width: 35px;
+    height: 5px;
+    background-color: #8000ff;
+    transition: all 0.3s ease;
+}
+.toggle .top_line {
+    position: absolute;
+    top: 5px;
+}
+.toggle .middle_line {
+    position: absolute;
+    top: 15px;
+}
+.toggle .bottom_line {
+    position: absolute;
+    top: 25px;
+}
+input:checked ~ .toggle .top_line {
+    transform: rotate(38deg);
+    top: 18px;
+}
+input:checked ~ .toggle .middle_line {
+    display: none;
+}
+input:checked ~ .toggle .bottom_line {
+    transform: rotate(-38deg);
+    top: 18px;
+}
+input:checked ~ .container {
+    transform: translateX(0vw);
+}
