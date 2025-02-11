@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    padding-left: 10px;
+}
+.container .main {
+    display: flex;
+    width: 200px; /** this ensures that when time is changing the items dont make the page shakii */
+    justify-content: space-between;
+    margin-left: -50px;
+    
+}
+.main h1 {
+    padding: 5px;
+}
+
+.buttons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons .one {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+  
+}
+.buttons .two {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    
+}
+.buttons .three {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+
+}
