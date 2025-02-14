@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+form {
+    width: 100%;
+    text-align: center;
+}
+form input {
+    font-size: 20px;
+    width: 200px;
+    padding: 5px 10px;
+}
+form #values {
+    margin-top: 50px;
+    font-size: 30px;
+}
+form #img img {
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    font-size: 20px;
+    padding: 7px 20px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(82, 208, 215);
+    border: none;
+    /* outline: 2px solid black; */
+    cursor: pointer;
+}
