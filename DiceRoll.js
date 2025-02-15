@@ -1,4 +1,4 @@
-
+const dice = document.getElementById("dice");
 
 dice.addEventListener("submit", event => {
     let input = document.getElementById("num");
