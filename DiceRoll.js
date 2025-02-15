@@ -3,7 +3,6 @@ const dice = document.getElementById("dice");
 dice.addEventListener("submit", event => {
     let input = document.getElementById("num");
     let value = document.getElementById("values");
-    let dice = document.getElementById("dice");
     let imgs = document.getElementById("img");
     let min = 1;
     let max = 6;
