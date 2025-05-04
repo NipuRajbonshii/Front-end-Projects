@@ -1,9 +1,9 @@
 const dice = document.getElementById("dice");
 
+let input = document.getElementById("num");
+let value = document.getElementById("values");
+let imgs = document.getElementById("img");
 dice.addEventListener("submit", event => {
-    let input = document.getElementById("num");
-    let value = document.getElementById("values");
-    let imgs = document.getElementById("img");
     let min = 1;
     let max = 6;
     let values = [];
