@@ -24,7 +24,7 @@ export default function App() {
     setConvertedAmount(amount * currencyDat[to]);
   }
   return (
-    <div className="w-screen flex flex-wrap  items-center justify-center h-screen bg-no-repeat bg-cover " style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2013/07/18/10/56/pile-163497_1280.jpg')`}}>
+    <div className="w-screen flex flex-wrap  items-center justify-center min-h-screen bg-no-repeat bg-cover bg-center  " style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2013/07/18/10/56/pile-163497_1280.jpg')`}}>
       <form 
       className="max-w-135 w-full flex flex-col items-center p-5 h-80 bg-white/35 rounded-xl mx-10 border-1"
       onSubmit={(e) => {

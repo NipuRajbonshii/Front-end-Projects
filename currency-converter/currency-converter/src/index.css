@@ -2,7 +2,12 @@
 
 @utility pos {
   position: absolute;
-  top: 306px;
+  top: 44%;
   color: white;
   border: 2px solid white;
+  z-index: 20;
+}
+
+@theme {
+  --breakpoint-sm: 440px;
 }
