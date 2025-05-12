@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const div = document.createElement("div");
         div.classList.add('product');
         div.innerHTML = `
-        <span>${prod.name} - ${prod.price.toFixed(2)}</span>
+        <span>${prod.name} - $${prod.price.toFixed(2)}</span>
         <button data-id="${prod.id}">Add to chart</button>
         `;
 
